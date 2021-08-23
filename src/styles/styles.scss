@@ -1,0 +1,76 @@
+// colors
+$body-color: #656565;
+$body-bg: #ffffff;
+$success: #7952b3;
+$primary: #000000;
+$secondary: #ffffff;
+
+// fonts override
+$font-family-base: 'Archivo', sans-serif;
+$h1-font-size: 2rem;
+$h3-font-size: 1.25rem;
+$h5-font-size: 1.571rem;
+$h2-font-size: 1.75rem;
+$headings-font-weight: 700;
+$headings-color: $primary;
+
+$hr-border-color: #e4e4e4;
+$hr-border-width: 0.286rem;
+
+// btn
+$btn-padding-y: 0.3em;
+$btn-padding-x: 2em;
+$btn-white-space: nowrap;
+$btn-font-weight: 500;
+$btn-border-radius: 0;
+$btn-border-width: 3px;
+
+// border
+$border-radius: 0.4rem;
+
+// breadcrumb
+$breadcrumb-font-size: 1.75rem;
+$breadcrumb-divider-color: $primary;
+$breadcrumb-active-color: #9b9b9b;
+
+// select
+$form-select-font-size: 1.4rem;
+$form-select-color: $primary;
+$form-select-bg: transparent;
+$form-select-border-width: 0;
+$form-select-focus-border-color: $breadcrumb-active-color;
+$form-select-focus-width: 1px;
+$form-select-border-radius: 0;
+$form-select-bg-size: 18px 24px;
+
+// checkbox
+$form-check-input-width: 1.25em;
+$form-check-label-color: #1d1d1d;
+$form-check-input-border-radius: 0;
+$form-check-input-border: 2px solid #000000;
+$form-check-input-checked-bg-color: transparent;
+$form-check-input-checked-color: $primary;
+$form-check-input-checked-border-color: $primary;
+$form-check-input-focus-box-shadow: 0 0 0 1px #9b9b9b;
+// radio
+$form-check-radio-border-radius: 0;
+$form-check-radio-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$form-check-input-checked-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/></svg>");
+
+// bootstrap
+@import '~bootstrap/scss/bootstrap.scss';
+
+// Customize some defaults
+$theme-colors: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'success': $success,
+  'info': $info,
+  'warning': $warning,
+  'danger': $danger,
+  'light': $light,
+  'dark': $dark,
+);
+
+.grey {
+  color: $breadcrumb-active-color;
+}
