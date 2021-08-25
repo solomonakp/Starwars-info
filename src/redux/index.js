@@ -1,9 +1,9 @@
-import { combineReducers } from 'redux';
+import { combineReducers } from 'redux'
 
-import radioReducer from './radio/radioReducer';
+import AppReducer from './reducers/AppReducer'
 
 const rootReducer = combineReducers({
-  radio: radioReducer,
-});
+  app: AppReducer,
+})
 
-export default rootReducer;
+export default rootReducer

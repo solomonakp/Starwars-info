@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# E-Commerce Proof of Concept
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An E-commerce proof concept to show the basic functionalities of an E-commerce site.
 
-## Available Scripts
+![screenshot](./public/screenshot.PNG)
 
-In the project directory, you can run:
+This E-Commerce prototype was created using Nextjs and a React Application at its core. It backend is written with Firestore and the application is very much Dynamic.The application allows its user to accomplish some of the basic e-commerce functionalities. This application is performant and accessibility compliant.
 
-### `yarn start`
+&nbsp;
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Built With
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- JavaScript, React,Create React App
+- Hooks, Redux, Redux thunk,
+- Sass, bootstrap.
+- SWAPI(Star Wars API).
 
-### `yarn test`
+&nbsp;
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Live Demo
 
-### `yarn build`
+[Live Demo Link](https://radio-widget-three.vercel.app/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+&nbsp;
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To get a local copy up and running follow these simple example steps.
 
-### `yarn eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+To run this project, you will need to have `node`,`npm` or `yarn`, `TypeScript` already installed locally
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Setup
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+`cd into the directory with command line terminal`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Install
 
-## Learn More
+run `npm install` or `yarn install` to install all the dependencies of the project
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Usage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+run `npm start` or `yarn start` to get the project running
 
-### Code Splitting
+open browser and navigate to `http://localhost:3000/`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Features
 
-### Analyzing the Bundle Size
+- ✔️ Featured Product
+- ✔️ Product List,
+- ✔️ Add to Cart
+- ✔️ Sorting
+- ✔️ Filtering
+- ✔️ Web performant
+- ✔️ API implementation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Customizations
 
-### Making a Progressive Web App
+The styles are written using SASS and styled JSX, some components have custom styles written in them with Styles Jsx.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+To tweak react components navigate to `/components`
 
-### Advanced Configuration
+To theme component global styles navigate to `/components/useTheme.tsx`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+To access global bootstrap styles navigate to `/styles/main.scss`
 
-### Deployment
+&nbsp;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Deployment
 
-### `yarn build` fails to minify
+run `npm build` or `yarn build` to generate build folder. You can now serve the build folder on any static server. for more information visit [https://nextjs.org/docs/deployment](https://nextjs.org/docs/deployment).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+&nbsp;
+
+## Authors
+
+👤 **Author**
+
+- Github: [solomonakp](https://github.com/solomonakp)
+- twitter: [@dev_chuck](https://twitter.com/dev_chuck)
+
+&nbsp;
+
+&nbsp;
+
+## 📝 License
+
+This project is [MIT](lic.url) licensed.

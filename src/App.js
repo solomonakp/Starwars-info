@@ -6,8 +6,13 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
-          {routes.map(({ component, exact, path }) => (
-            <Route path={path} component={component} exact={exact} />
+          {routes.map(({ component, exact, path }, index) => (
+            <Route
+              path={path}
+              component={component}
+              exact={exact}
+              key={index}
+            />
           ))}
         </Switch>
       </div>
