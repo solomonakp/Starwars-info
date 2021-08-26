@@ -20,7 +20,7 @@ Star-Wars-Info is built with React and its template was bootstrapped using CRA(C
 
 ## Live Demo
 
-[Live Demo Link](https://radio-widget-three.vercel.app/)
+[Live Demo Link](https://starwars-info-neon.vercel.app/)
 
 &nbsp;
 

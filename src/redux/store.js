@@ -15,4 +15,9 @@ const store = createStore(
   composeEnhancers(applyMiddleware(...middleware))
 )
 
+export const makeStore = (
+  storeReducer = rootReducer,
+  storeInitialState = initialState
+) => createStore(storeReducer, storeInitialState, compose(...middleware))
+
 export default store

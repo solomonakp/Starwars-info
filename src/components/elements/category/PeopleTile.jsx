@@ -21,7 +21,7 @@ const PeopleTile = memo((props) => {
   const route = useMemo(() => creatRoute(url), [url])
 
   return (
-    <div className="col mt-0">
+    <div className="col mt-0" data-testid="category-tile">
       <Link
         className={`${tile} p-3 position-relative overflow-hidden text-left w-100 mb-5`}
         to={route}
