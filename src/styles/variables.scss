@@ -1,0 +1,66 @@
+// colors
+
+$body-bg: #141518;
+$success: #7952b3;
+$primary: #f2e12b;
+$secondary: #ffffff;
+$dark: #9f9fa0;
+$light: #cecece;
+$body-color: $secondary;
+$card-overlay: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0) 88.97%);
+
+// fonts override
+$font-family-base: 'Roboto', sans-serif;
+$h1-font-size: 3rem;
+$h3-font-size: 1.5rem;
+$h2-font-size: 2rem;
+$h5-font-size: 1.571rem;
+$headings-font-weight: 900;
+$headings-color: $secondary;
+$title-font-size: 0.813rem;
+
+$hr-border-color: #e4e4e4;
+$hr-border-width: 0.286rem;
+
+// btn
+$btn-padding-y: 0.625em;
+$btn-padding-x: 1.25em;
+$btn-white-space: nowrap;
+$btn-font-weight: 400;
+$btn-border-radius: 6px;
+$btn-border-width: 3px;
+$btn-bg-color: #1c1d23;
+
+// border
+$border-radius: 0.875rem;
+$border-color: #3a3d45;
+$border-width: 0.18em;
+
+$pagination-color: $secondary;
+$pagination-bg: $btn-bg-color;
+$pagination-border-width: 1px;
+$pagination-border-radius: 4px;
+$pagination-margin-start: 0.5rem;
+$pagination-border-color: $border-color;
+$pagination-hover-color: $secondary;
+$pagination-hover-bg: $btn-bg-color;
+$pagination-hover-border-color: $primary;
+$pagination-focus-color: $secondary;
+$pagination-focus-bg: $btn-bg-color;
+$pagination-active-color: $secondary;
+$pagination-active-bg: $btn-bg-color;
+$pagination-active-border-color: $primary;
+// checkbox
+$form-check-input-width: 1.5em;
+$form-check-label-color: $secondary;
+$form-check-input-border-radius: 3px;
+$form-check-input-border: 1px solid $border-color;
+$form-check-input-checked-bg-color: $primary;
+$form-check-input-checked-color: #0f1012;
+$form-check-input-checked-border-color: $primary;
+$form-check-input-focus-box-shadow: 0 0 0 1px #9b9b9b;
+
+// transitions
+$image-transition-in: transform 1s, visibility 1s ease-in, -webkit-transform 1s;
+$image-transition-out: transform 1s, visibility 1s ease-out,
+  -webkit-transform 1s;

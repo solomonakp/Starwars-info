@@ -1,0 +1,17 @@
+@import 'styles/variables';
+
+.details {
+  p {
+    font-size: 1.125rem;
+  }
+}
+
+.box {
+  background-color: $btn-bg-color;
+  border: 1px solid $border-color;
+  border-radius: $btn-border-radius;
+}
+
+.row {
+  border-bottom: 1px solid $border-color;
+}

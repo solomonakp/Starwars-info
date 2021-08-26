@@ -5,6 +5,10 @@ import {
   SET_ACTION,
   FINDING_PEOPLE,
   SET_SEARCH_VALUE,
+  SET_FILTER_VALUE,
+  SET_IS_SHOWING,
+  RESET_SEARCH,
+  SET_ITEM,
 } from 'redux/constants'
 
 const initialState = {
@@ -15,6 +19,8 @@ const initialState = {
   search: '',
   items: [],
   action: '',
+  isShowing: false,
+  item: {},
 }
 
 const AppReducer = (state = initialState, { type, payload }) => {
@@ -36,6 +42,11 @@ const AppReducer = (state = initialState, { type, payload }) => {
         categoryItems: [...payload],
         items: [...payload],
       }
+    case SET_ITEM:
+      return {
+        ...state,
+        item: payload,
+      }
     case SET_ACTION:
       return {
         ...state,
@@ -46,6 +57,23 @@ const AppReducer = (state = initialState, { type, payload }) => {
       return {
         ...state,
         search: payload,
+      }
+
+    case SET_FILTER_VALUE:
+      return {
+        ...state,
+        filter: payload,
+      }
+
+    case SET_IS_SHOWING:
+      return {
+        ...state,
+        isShowing: payload,
+      }
+    case RESET_SEARCH:
+      return {
+        ...state,
+        items: [...state.categoryItems],
       }
     case FINDING_PEOPLE:
       const { search, filter, categoryItems } = state
@@ -63,10 +91,9 @@ const AppReducer = (state = initialState, { type, payload }) => {
 
       // only filter value
       if (filter.length > 0 && search === '') {
-        const filteredResult = categoryItems.filter((gender) => {
+        const filteredResult = categoryItems.filter(({ gender }) => {
           return filter.includes(gender)
         })
-
         items = [...filteredResult]
       }
 
@@ -82,6 +109,11 @@ const AppReducer = (state = initialState, { type, payload }) => {
         )
 
         items = [...filteredAndSearchedResult]
+      }
+
+      // both values are empty
+      if (filter.length === 0 && search === '') {
+        items = [...categoryItems]
       }
 
       return {

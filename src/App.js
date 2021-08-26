@@ -1,10 +1,11 @@
+import Layout from 'components/layout/Layout'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { routes } from 'utils/constants'
 
 function App() {
   return (
     <Router>
-      <div className="App">
+      <Layout>
         <Switch>
           {routes.map(({ component, exact, path }, index) => (
             <Route
@@ -15,7 +16,7 @@ function App() {
             />
           ))}
         </Switch>
-      </div>
+      </Layout>
     </Router>
   )
 }

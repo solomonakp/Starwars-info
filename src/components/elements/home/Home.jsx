@@ -1,11 +1,12 @@
-import { Link } from 'react-router-dom'
+import LandingText from './LandingText'
+import ChooseCategory from './ChooseCategory'
 
 const Home = () => {
   return (
-    <div>
-      <Link to="/people">People</Link>
-      <Link to="/planets">Planets</Link>
-    </div>
+    <section className="w-100">
+      <LandingText />
+      <ChooseCategory />
+    </section>
   )
 }
 

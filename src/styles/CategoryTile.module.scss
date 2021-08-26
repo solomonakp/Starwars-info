@@ -1,0 +1,34 @@
+@import 'styles/variables';
+
+.tile {
+  background-color: $btn-bg-color;
+  border-radius: 0.5rem;
+  transition: background-color 1s ease-in-out;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: lighten($btn-bg-color, 10%);
+    will-change: background-color;
+    img {
+      transform: scale(1.2);
+      transition: $image-transition-out;
+    }
+  }
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    transform-origin: center;
+    will-change: transform;
+    transition: $image-transition-in;
+  }
+}
+
+.tile__image {
+  border-radius: $btn-border-radius;
+}
+
+.tile__name {
+  margin: 0.8rem 0;
+}

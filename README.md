@@ -1,10 +1,10 @@
-# E-Commerce Proof of Concept
+# Star-Wars-Info
 
-An E-commerce proof concept to show the basic functionalities of an E-commerce site.
+Star-Wars-Info an application built to provide valid information about Star-Wars Characters and Planets .
 
 ![screenshot](./public/screenshot.PNG)
 
-This E-Commerce prototype was created using Nextjs and a React Application at its core. It backend is written with Firestore and the application is very much Dynamic.The application allows its user to accomplish some of the basic e-commerce functionalities. This application is performant and accessibility compliant.
+Star-Wars-Info is built with React and its template was bootstrapped using CRA(Create React App). The global State of the Application is handled by Redux and most of the styles are an extension of Bootstrap. Star-Wars-Info allows users to easy navigate information regarding Star-Wars.
 
 &nbsp;
 
@@ -29,7 +29,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-To run this project, you will need to have `node`,`npm` or `yarn`, `TypeScript` already installed locally
+To run this project, you will need to have `node`,`npm` or `yarn` already installed locally
 
 ### Setup
 
@@ -47,29 +47,30 @@ open browser and navigate to `http://localhost:3000/`
 
 ## Features
 
-- ✔️ Featured Product
-- ✔️ Product List,
-- ✔️ Add to Cart
-- ✔️ Sorting
-- ✔️ Filtering
-- ✔️ Web performant
 - ✔️ API implementation
+- ✔️ A home page showing two categories of items.
+- ✔️ A category page (with pagination) to show all of its items.
+- ✔️ A details page of one item showing more detailed information.
+- ✔️ Search (for one category).
+- ✔️ One or two filtering options (for one category).
+- ✔️ Web performant.
+- ✔️ Accessibility.
 
 ### Customizations
 
-The styles are written using SASS and styled JSX, some components have custom styles written in them with Styles Jsx.
+The styles are written using SASS and SassModules. The local styles for each file can be found in there corresponding `[componentName].module.sass` files in the `src/styles/` directory.
 
-To tweak react components navigate to `/components`
+To tweak react components navigate to `src/components` directory.
 
-To theme component global styles navigate to `/components/useTheme.tsx`
+To theme component global styles navigate to `src/components/useTheme.tsx` directory.
 
-To access global bootstrap styles navigate to `/styles/main.scss`
+To access global bootstrap styles navigate to `src/styles/main.scss` directory.
 
 &nbsp;
 
 ## Deployment
 
-run `npm build` or `yarn build` to generate build folder. You can now serve the build folder on any static server. for more information visit [https://nextjs.org/docs/deployment](https://nextjs.org/docs/deployment).
+run `npm build` or `yarn build` to generate build folder. You can now serve the build folder on any static server. for more information visit [https://create-react-app.dev/docs/deployment](https://create-react-app.dev/docs/deployment).
 
 &nbsp;
 

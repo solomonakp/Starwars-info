@@ -5,6 +5,7 @@ import {
   fetchedItems,
   findingPeople,
   setAction,
+  setItem,
 } from './actions'
 
 export const getCategoryItems = (category) => {
@@ -60,5 +61,23 @@ export const findPeople = () => {
       dispatch(setAction(''))
       dispatch(fetchedItems())
     }, 500)
+  }
+}
+
+export const getItemDetails = (path) => {
+  return (dispatch) => {
+    dispatch(fetchingItems())
+
+    Axios.get(path)
+      .then((res) => {
+        const { data } = res
+
+        dispatch(setItem(data))
+      })
+      .then(() => {
+        setTimeout(() => {
+          dispatch(fetchedItems())
+        }, 500)
+      })
   }
 }

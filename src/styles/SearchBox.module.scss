@@ -1,0 +1,15 @@
+@import 'styles/variables';
+
+.searchBox {
+  max-width: 24rem;
+  @media (max-width: 576px) {
+    max-width: 100%;
+  }
+  input {
+    border-radius: $btn-border-radius;
+    background: $btn-bg-color;
+  }
+  button {
+    background-color: lighten($btn-bg-color, 20%);
+  }
+}

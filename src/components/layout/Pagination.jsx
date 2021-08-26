@@ -11,25 +11,31 @@ const Pagination = memo((props) => {
   }
 
   return (
-    <nav className="w-100">
-      <ul className="pagination">
-        {pageNumbers.map((number, index) => (
-          <li key={index} className="page-item">
-            <a
-              onClick={(e) => {
-                e.preventDefault()
-
-                paginate(number)
-              }}
-              href="!#"
-              className="page-link"
-              style={{ color: currentPage ? 'blue' : 'black' }}
+    <nav className="w-100 mb-4 pb-1">
+      <div className="container">
+        <ul className="pagination flex-wrap justify-content-left">
+          {pageNumbers.map((number, index) => (
+            <li
+              key={index}
+              className={`mb-2 mb-sm-0 page-item ${
+                currentPage === number && 'active'
+              }`}
             >
-              {number}
-            </a>
-          </li>
-        ))}
-      </ul>
+              <a
+                onClick={(e) => {
+                  e.preventDefault()
+
+                  paginate(number)
+                }}
+                href="!#"
+                className="page-link "
+              >
+                {number}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </nav>
   )
 })
