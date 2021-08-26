@@ -52,7 +52,7 @@ const PeopleDetails = (props) => {
 
       <header className="mt-5">
         <p>
-          <strong>Statsitics</strong>
+          <strong>Statistics</strong>
         </p>
       </header>
 

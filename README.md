@@ -14,12 +14,19 @@ Star-Wars-Info is built with React and its template was bootstrapped using CRA(C
 - Hooks, Redux, Redux thunk,
 - Sass, bootstrap.
 - SWAPI(Star Wars API).
+- Figma
 
 &nbsp;
 
 ## Live Demo
 
 [Live Demo Link](https://radio-widget-three.vercel.app/)
+
+&nbsp;
+
+## User Interface Mock up
+
+[Figma Link](https://www.figma.com/file/OEvEm5yotJwoFdaH5hdQvg/Untitled?node-id=4%3A746)
 
 &nbsp;
 
@@ -55,6 +62,7 @@ open browser and navigate to `http://localhost:3000/`
 - ✔️ One or two filtering options (for one category).
 - ✔️ Web performant.
 - ✔️ Accessibility.
+- ✔️ Performant.
 
 ### Customizations
 

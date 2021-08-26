@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from 'styles/Loader.module.scss'
-import PropTypes from 'prop-types'
 
 const Loader = ({ type = 1, fixed = false }) => {
   return (

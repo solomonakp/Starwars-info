@@ -20,7 +20,7 @@ const CategoryItems = memo((props) => {
   return (
     <section>
       <div className="container">
-        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3   row-cols-lg-4 g-5 mt-0 align-items-center">
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-5 mt-0 align-items-center">
           {items.map((item, index) =>
             isPeople ? (
               <PeopleTile item={item} key={index} />

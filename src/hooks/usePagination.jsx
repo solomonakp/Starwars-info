@@ -15,7 +15,6 @@ const usePagination = (props) => {
 
   useEffect(() => {
     if (action === 'RESET') {
-      console.log('i was called')
       setCurrentPage(1)
     }
     return () => {}
